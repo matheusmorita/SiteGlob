@@ -25,5 +25,6 @@ As previously stated, the website architecture has some dependencies, to install
 Finally, some scripts are pre-configured for both environments (production and development). Both can be started locally via the respective commands:
 
 > npm run dev
+
 > npm run build
 
