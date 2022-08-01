@@ -1,0 +1,32 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+    font-size: calc(100vw / 1920 * 10);
+    overflow: hidden;
+    background: #fff;
+    line-height: 1;
+    position: fixed;
+    @include media('<=tablet') {
+        overflow: visible !important;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+body {
+    overscroll-behavior: contain;
+    touch-action:none;
+    font-size: 2rem;
+    position: fixed;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.hidden {
+    display: none !important;
+}

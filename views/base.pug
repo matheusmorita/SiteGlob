@@ -1,0 +1,42 @@
+block variables
+
+doctype html 
+
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        base(href="/")
+
+        title="Hello world"
+
+        meta(name="description" content="")
+
+        link(rel="apple-touch-icon" sizes="180x180" href="")
+        link(rel="stylesheet" href="/main.css")
+        link(rel="icon" type="image/png" sizes="32x32" href="")
+        link(rel="icon" type="image/png" sizes="16x16" href="")
+        //- link(rel="manifest" href="/site.webmanifest")
+        link(rel="mask-icon" href="" color="#131313")
+        meta(name="msapplication-TileColor" content="#131313")
+        meta(name="theme-color" content="#131313")
+
+        meta(property="og:type" content="website")
+        meta(property="og:title" content="")
+        meta(property="og:description" content="")
+        meta(property="og:image" content="")
+
+        meta(property="twitter:card" content="sumary_large_image")
+        meta(property="twitter:title" content="")
+        meta(property="twitter:description" content="")
+        meta(property="twitter:image" content="")
+    style
+        include ../public/main.css 
+    body
+        .content#content(data-template=template)
+            block content
+
+        .modals 
+            block modal
+
+        script(src="main.js")

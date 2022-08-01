@@ -1,0 +1,64 @@
+{
+  "name": "site-glob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "backend:build": "nodemon app.js",
+    "frontend:build": "webpack --progress --config webpack.config.js",
+    "dev": "concurrently \"npx webpack serve\" \"npm run backend:build\"",
+    "build": "concurrently \"npm run backend:build\" \"npm run frontend:build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blocklize/SiteGlob.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blocklize/SiteGlob/issues"
+  },
+  "homepage": "https://github.com/Blocklize/SiteGlob#readme",
+  "devDependencies": {
+    "auto-bind": "^5.0.1",
+    "babel-loader": "^8.2.3",
+    "clean-webpack-plugin": "^4.0.0",
+    "concurrently": "^7.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "glslify-loader": "^2.0.0",
+    "gsap": "^3.9.1",
+    "include-media": "^1.4.10",
+    "mini-css-extract-plugin": "^2.6.0",
+    "normalize-wheel": "^1.0.1",
+    "ogl": "^0.0.87",
+    "postcss-loader": "^6.2.1",
+    "prefix": "^1.0.0",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.1",
+    "utils": "^0.2.2",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@prismicio/client": "^4.0.0",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "prismic-dom": "^2.2.5",
+    "pug": "^3.0.2",
+    "rellax": "^1.12.1",
+    "ua-parser-js": "^0.7.28"
+  }
+}
